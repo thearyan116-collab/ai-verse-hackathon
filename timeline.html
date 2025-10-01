@@ -9,16 +9,19 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <a class="brand" href="index.html" aria-label="AI-VERSE home">
-        <span class="logo">AI<span>VERSE</span></span>
+      <a class="brand" href="index.html" aria-label="AI-VERSE 2.0 home">
+        <span class="logo">AI<span>VERSE 2.0</span></span>
       </a>
       <nav class="nav" aria-label="Primary">
-        <ul id="navMenu" class="nav__menu">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+        <ul id="navMenu" class="nav__menu" tabindex="0">
+          <li><a href="problem.html">Problem Statement</a></li>
           <li><a href="timeline.html">Time Line</a></li>
           <li><a href="judges.html">Judges</a></li>
           <li><a href="index.html#contact">Contact</a></li>
           <li><a href="index.html#faq">FAQ</a></li>
-          <li><a class="btn btn--primary" href="index.html#register">Register</a></li>
+          <li><a class="btn btn--primary" href="https://forms.gle/5N4vXWLEfN3avrog9" target="_blank" style="min-width:120px;text-align:center;">Register</a></li>
+          <li><a class="btn btn--warning" id="downloadBrochure" href="Hackathon Broucher.pdf" download style="min-width:120px;text-align:center;margin-left:12px;">Brochure</a></li>
         </ul>
       </nav>
     </div>
