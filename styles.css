@@ -170,7 +170,7 @@
   position: absolute;
   right: 32px;
   top: 50%;
-  transform: translateY(-50%) rotate(0deg);
+.section--pad{padding:36px 0}
   font-size: 1.2em;
   color: var(--muted);
   transition: transform 0.3s;
