@@ -425,15 +425,15 @@ body{
   }
   .hero__art {
     order: 1 !important;
-    margin-bottom: 4px !important;
-    margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
   }
   .hero__copy {
     order: 2 !important;
     margin-top: 0 !important;
   }
   .site-header {
-    margin-bottom: 2px !important;
+  margin-bottom: 0 !important;
   }
   .hero__title {
     margin-top: 0 !important;
