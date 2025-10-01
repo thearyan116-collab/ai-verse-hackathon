@@ -423,9 +423,19 @@ body{
   }
   .hero__art {
     order: 1 !important;
+    margin-bottom: 12px !important;
+    margin-top: 8px !important;
   }
   .hero__copy {
     order: 2 !important;
+    margin-top: 0 !important;
+  }
+  .site-header {
+    margin-bottom: 8px !important;
+  }
+  .hero__title {
+    margin-top: 0 !important;
+    margin-bottom: 8px !important;
   }
 }
 
