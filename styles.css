@@ -169,7 +169,7 @@
   content: '\25B6'; /* right arrow */
    position: absolute;
   right: 32px;
-  top: 50%; 
+  top: 30%; 
 .section--pad{padding:32px 0} 
   font-size: 1.2em;
   color: var(--muted);
