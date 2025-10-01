@@ -170,7 +170,7 @@
   position: absolute;
   right: 32px;
   top: 50%;
-.section--pad{padding:36px 0}
+.section--pad{padding:32px 0}
   font-size: 1.2em;
   color: var(--muted);
   transition: transform 0.3s;
