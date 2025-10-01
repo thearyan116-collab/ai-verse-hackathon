@@ -420,22 +420,30 @@ body{
   .grid--2 {
     display: flex !important;
     flex-direction: column !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
   }
   .hero__art {
     order: 1 !important;
-    margin-bottom: 12px !important;
-    margin-top: 8px !important;
+    margin-bottom: 4px !important;
+    margin-top: 0 !important;
   }
   .hero__copy {
     order: 2 !important;
     margin-top: 0 !important;
   }
   .site-header {
-    margin-bottom: 8px !important;
+    margin-bottom: 2px !important;
   }
   .hero__title {
     margin-top: 0 !important;
-    margin-bottom: 8px !important;
+    margin-bottom: 2px !important;
+  }
+  .hero__art img {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
   }
 }
 
