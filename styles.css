@@ -415,6 +415,18 @@ body{
   .cards{grid-template-columns:1fr}
   .grid--3{grid-template-columns:1fr}
   .hero__title{font-size:34px}
+
+  /* Reverse hero image and text order on mobile */
+  .grid--2 {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .hero__art {
+    order: 1 !important;
+  }
+  .hero__copy {
+    order: 2 !important;
+  }
 }
 
 
