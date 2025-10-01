@@ -167,10 +167,10 @@
 }
 .faq-question::after {
   content: '\25B6'; /* right arrow */
-  position: absolute;
+   position: absolute;
   right: 32px;
-  top: 50%;
-.section--pad{padding:32px 0}
+  top: 50%; 
+.section--pad{padding:32px 0} 
   font-size: 1.2em;
   color: var(--muted);
   transition: transform 0.3s;
@@ -342,6 +342,27 @@ body{
 
 .grid{display:grid;gap:28px}
 .grid--2{grid-template-columns:repeat(2,minmax(0,1fr))}
+
+/* Align hero image bottom with cards bottom on desktop */
+@media (min-width: 681px) {
+  .grid--2 {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+  }
+  .hero__copy, .hero__art {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .hero__art img {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    height: 100%;
+    object-fit: contain;
+  }
+}
 .grid--3{grid-template-columns:repeat(3,minmax(0,1fr));gap:36px}
 
 .hero__title{font-size:42px;line-height:1.15;margin:12px 0 8px}
@@ -411,7 +432,46 @@ body{
 @media (max-width: 680px){
   .nav__toggle{display:inline-block}
   .nav__menu{position:fixed;inset:60px 16px auto 16px;background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:14px;display:none;flex-direction:column}
-  .nav__menu.open{display:flex}
+    .nav__menu {
+      position: fixed;
+      inset: 60px 16px auto 16px;
+      background: var(--panel);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 22px;
+      padding: 28px 18px 22px 18px;
+      display: none;
+      flex-direction: column;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.28), 0 1.5px 8px var(--primary-2);
+      animation: navMenuDrop 0.35s cubic-bezier(.4,2,.6,1) both;
+      z-index: 100;
+    }
+    .nav__menu.open {
+      display: flex;
+      animation: navMenuDrop 0.35s cubic-bezier(.4,2,.6,1) both;
+    }
+    @keyframes navMenuDrop {
+      0% { opacity: 0; transform: translateY(-24px) scale(0.98); }
+      100% { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .nav__menu li {
+      margin-bottom: 18px;
+      text-align: center;
+    }
+    .nav__menu li:last-child {
+      margin-bottom: 0;
+    }
+    .nav__menu .btn {
+      margin: 12px auto 0 auto !important;
+      width: 80vw !important;
+      max-width: 320px;
+      font-size: 20px !important;
+      border-radius: 14px;
+      box-shadow: 0 2px 12px var(--primary-2);
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      text-align: center !important;
+    }
   .cards{grid-template-columns:1fr}
   .grid--3{grid-template-columns:1fr}
   .hero__title{font-size:34px}
