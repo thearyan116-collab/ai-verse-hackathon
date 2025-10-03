@@ -226,7 +226,7 @@
 }
 .hero__info-row .card.prize-glow {
   /* No special glow for prize pool, use default card style */
-  box-shadow: 0 0 16px 4px var(--accent), 0 0 8px 2px var(--primary-2), 0 2px 12px rgba(0,0,0,0.12);
+  /* box-shadow: 0 0 16px 4px var(--accent), 0 0 8px 2px var(--primary-2), 0 2px 12px rgba(0,0,0,0.12); */
   border: 1.5px solid var(--primary-2);
   background: var(--card);
 }
