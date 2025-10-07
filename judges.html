@@ -5,6 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Judges | AI VERSE 2.0</title>
   <link rel="stylesheet" href="styles.css" />
+  <style> -->
+    .cards--people {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+/* Each card takes 45% width on larger screens (→ 2 per row) */
+.card {
+  flex: 1 1 calc(45% - 32px);
+  max-width: 500px;
+}
+
+/* On smaller screens, make it full width */
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%;
+    max-width: 90%;
+  }
+}
+  <!-- </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
 <body>
   <header class="site-header">
@@ -27,14 +51,104 @@
     </div>
   </header>
   <main>
-    <section id="judges" class="section--pad section--alt">
-      <div class="container">
-  <h2 class="section__title">JUDGES</h2>
-        <div class="cards cards--people">
-          <div style="text-align:center; font-size:1.5em; color:var(--muted); margin:40px 0;">To be announced soon</div>
+    <section id="team" class="section--pad">
+        <div class="container">
+          <h2 class="section__title">Judges</h2>
+          <div class="cards cards--people">
+            <article class="person card">
+              <img src="image\Ashwin.jpg" alt="Team member portrait" />
+              <h3>Ashwin Das Gururaja
+</h3>
+              <p>Senior Engineering Manager, Adobe
+</p>
+              <br>
+              <p class="judges-content">Distinguished Fellow of SCRS (Society for Communication and Research in Science). He has been a speaker and judge at several international conferences on AI, payments, and fraud defense, including MRC San Diego 2025, IEEE AIC 2025, and the Fraud & Payment Leaders Summit Miami 2025. He currently leads global teams at Adobe, focusing on building and scaling payments and risk platforms to enhance security and efficiency in digital transactions. </p>
+              <div class="social-links">
+  <a href="https://www.linkedin.com/in/ashwindas" target="_blank" aria-label="LinkedIn Profile">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</div>
+
+              </article>
+            
+              <article class="person card">
+              <img src="image\akhil.jpg" alt="Team member portrait" />
+              <h3>Akhil Eppa</h3>
+              <p>Machine Learning Engineer, Adobe </p>
+              <br>
+              <p class="judges-content"> Akhil earned a Master’s degree from Carnegie Mellon University (CMU) and is currently working as a Machine Learning Engineer at Adobe. He contributes to the productionization of GenAI applications and Agentic applications, focusing on improving LLM output quality, developing evaluation methods, and experimenting with innovative approaches. </p>
+              <div class="social-links">
+                <br>
+                <br>
+  <a href="https://www.linkedin.com/in/akhil-eppa/" target="_blank" aria-label="LinkedIn Profile">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</div>
+
+              </article>
+              <article class="person card">
+              <img src="image\shreyas srinivas joshi.jpg" alt="Team member portrait" />
+              <h3>Shreyas Srinivas Joshi</h3>
+              <p>Independent Researcher, USA</p>
+              <br>
+              <p class="judges-content">Engineer with extensive research experience in Machine Learning, Computer Vision, and Deep Learning. He has worked on multiple independent research projects exploring advanced AI methodologies and their practical applications. His work reflects a deep understanding of both theoretical and applied aspects of these domains, contributing to innovative developments in the field of artificial intelligence. </p>
+              <div class="social-links">
+                <br>
+  <a href="https://www.linkedin.com/in/shreyas-joshi-2ab877233/" target="_blank" aria-label="LinkedIn Profile">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</div>
+
+              </article>
+              <article class="person card">
+              <img src="image\aniruddha.jpg" alt="Team member portrait" />
+              <h3>
+Aniruddha Srinivas Joshi
+</h3>
+              <p>Independent Researcher, USA</p>
+              <br>
+              <p class="judges-content">Industry expert with a proven track record in Artificial Intelligence, Machine Learning, Cybersecurity, and Extended Reality innovation. He has successfully led and contributed to multiple high-impact projects, driving technological advancements and implementing innovative solutions across these domains. His work demonstrates a strong ability to bridge cutting-edge research with practical applications in the industry.</p>
+              <div class="social-links"><br>
+  <a href="https://www.linkedin.com/in/aniruddha-s-joshi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn Profile">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</div>
+
+              </article>
+            <article class="person card">
+              <img src="image\karthik.jpg" alt="Team member portrait" />
+              <h3>Karthik Ramanathan</h3>
+              <p>Senior Software Engineer, Yugabyte</p>
+              <br>
+              <p class="judges-content">Karthik is a Senior Software Engineer at Yugabyte, where he builds scalable, distributed SQL systems with a focus on query optimization, correctness, and performance. Previously, he was part of the CMU-DB Group at Carnegie Mellon University, researching database systems, and worked on cloud and storage technologies at Nutanix and HPE. He is passionate about creating the next generation of databases and computer systems to power modern AI applications. </p>
+              <div class="social-links">
+  <a href="https://www.linkedin.com/in/karthik-ramanathan1/" target="_blank" aria-label="LinkedIn Profile">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</div>
+
+              </article>
+              <article class="person card">
+              <img src="image\kavitha.jpg" alt="Team member portrait" />
+              <h3>Kavitha Thiyagarajan
+</h3>
+              <p>Client Enterprise Delivery Director, Ascendion
+</p>
+              <br>
+              <p class="judges-content">Author of Ethical AI in Financial Services and Digital Transformation for Senior Leaders. Kavihta has written extensively on the responsible implementation of AI in the financial sector and strategies for guiding organizations through digital transformation, providing insights that combine practical experience with thought leadership in these critical areas.
+</p><br>
+              <div class="social-links">
+                <br>
+  <a href="https://www.linkedin.com/in/kavitha-thiyagarajan-65772a52/" target="_blank" aria-label="LinkedIn Profile">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</div>
+
+              </article>
+            
+            
         </div>
-      </div>
-    </section>
+      </section>
   </main>
   <footer id="contact" class="site-footer">
     <div class="container grid grid--3">
@@ -54,13 +168,16 @@
         <h4>Contact Us</h4>
         <p>
           Address: BMS College Of Engineering, Bangalore<br />
-           Email: <a href="mailto:augment_ai@bmsce.ac.in" style="color:#e6edf7 !important;">augment_ai@bmsce.ac.in</a><br />
-           <!-- Website: <a href="https://augment.ai" target="_blank" rel="noreferrer">Augment.AI</a> -->
+          Email: <a href="mailto:augment_ai@bmsce.ac.in" style="color:#e6edf7 !important;">augment_ai@bmsce.ac.in</a><br />
         </p>
       </address>
     </div>
   </footer>
-</body>
 
+<script>
+  // JavaScript to update year dynamically
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 <script src="script.js"></script>
+</body>
 </html>
