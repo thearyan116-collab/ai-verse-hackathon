@@ -36,7 +36,7 @@ function updateCountdown() {
   if (els.m) els.m.textContent = String(mins).padStart(2, '0');
   if (els.s) els.s.textContent = String(secs).padStart(2, '0');
   if (diff === 0 && document.getElementById('countdown')) {
-    document.getElementById('countdown').textContent = 'Event Started!';
+    document.getElementById('countdown').textContent = '';
   }
 }
 setInterval(updateCountdown, 1000);
